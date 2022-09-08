@@ -8,7 +8,7 @@ function Nav() {
             </div>
             <div className="nav-bar">
             <li><a href="/">Home</a></li>
-            <li><a href=".new-post-form">Sign In</a></li>
+            <li><a href=".new-post-form">Login</a></li>
             <li><a href="#footer">Register</a></li> 
             <li><a href="#footer">Market</a></li> 
             </div>

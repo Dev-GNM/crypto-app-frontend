@@ -1,3 +1,8 @@
+*{
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,10 +22,10 @@ code {
 #nav-list {
   background:  rgb(10, 10, 10);
   height: 90px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   position: fixed;
   color: white;
@@ -53,7 +58,23 @@ a {
     color: rgb(12, 14, 14);
     background-color: aliceblue;
     border-radius: 5px;
-    padding: 3px;
+    padding: 2px;
+}
+
+
+/* Slider */
+#slide-text {
+  height: 250px;
+  background-color: rgba(222, 240, 243, 0.664);
+  text-align: center;
+  padding-top: 12%;
+  background-image: url("/public/image1.jpg");
+  color: rgb(15, 11, 11);
+  font-size: 20px;
+}
+
+image{
+  object-fit: fill;
 }
 
 /* Tradable */
@@ -113,4 +134,66 @@ a {
 }
 .green{
   color: #11d811;
+}
+
+
+
+/* Footer */
+input[type=submit] {
+  background-color: rgba(204, 225, 228, 0.664);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(48, 46, 46);
+  color: white;
+}
+
+
+input[type=text], textarea {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: horizontal;
+  overflow: hidden;
+  border: solid black 1px;
+}
+
+.support{
+padding: 12px;
+margin: 18px;
+border-radius: 10px;
+}
+
+
+.support p{
+  padding-top: 40px;
+}
+
+
+
+.support h3{
+  font-size: 25px;
+}
+
+#footer{
+  background-color: rgb(48, 46, 46);
+  height: 480px;
+  opacity: 0.9;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
 }
