@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Tradable() { 
-    
+function Tradable() {
+    const [endPoint, setEndpoints] = useState("")
+    const [container, setContainer] = useState([])
+  
+
     fetch('https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr', {
         "method": 'GET',
         "headers": {
@@ -12,18 +15,27 @@ function Tradable() {
         .then(response => {
             console.log(response.json());
         })
-              
+        .then(data => {
+            setContainer(data)
+        })
+
         .catch(err => {
             console.error(err);
         });
 
-       
+    const onChangeHandler = (e) => {
+        setEndpoints(e.target.value)
+    }
+    const submitHandler = e => {
+        e.preventDefault()
+    }
+
     return (
         <div class="movies-container">
-            <h1>Top rated movies</h1> 
-            <form>
-                <input type="text"placeholder="search your favorite movie"/>
-                   <button type="submit">Search</button>
+            <h1>Top rated movies</h1>
+            <form onSubmit={submitHandler}>
+                <input type="text" value={endPoint} onChange={onChangeHandler} placeholder="search your favorite movie" />
+                <button type="submit">Search</button>
             </form>
         </div>
     );
