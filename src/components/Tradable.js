@@ -19,13 +19,12 @@ function Tradable() {
 
        
     return (
-        <div>
-            <h1>Top rated movies</h1>
-           <form>
-            <input type="text">
-                <button type="search"></button>
-            </input>
-           </form>
+        <div class="movies-container">
+            <h1>Top rated movies</h1> 
+            <form>
+                <input type="text"placeholder="search your favorite movie"/>
+                   <button type="submit">Search</button>
+            </form>
         </div>
     );
 }

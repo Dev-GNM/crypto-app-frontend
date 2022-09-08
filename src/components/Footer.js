@@ -19,7 +19,7 @@ import React from 'react';
         <textarea value="content" placeholder="Write here..."/>
         <input type="submit" value="Submit"/>
       </form>
-      <strong><p>Designed with passion by Geoffrey&#128512;</p></strong>
+      <strong><p>Designed with passion by Geoffrey</p></strong>
       </div> 
      
     </div>
