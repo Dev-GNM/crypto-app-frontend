@@ -1,20 +1,27 @@
 import React from 'react';
 
  function Tradable() {
-  return (
-    <div className="trends">
-      <h3>Crypto Trends</h3>
-      <form>
-        <input type="text" placeholder="search by topic" />
-        <input type="submit" value="Search" />
-        <div className="post">
-            <li>Post</li>
-            <li>Author</li>
-            <li>Comments</li>
-        </div>
-      </form>
+  const [posts, setPosts] = useState ([])
+  useEffect(() => {
+    fetch("http://localhost:9292/posts")
+    .then((response) => response.json())
+    .then((data) =>{
+      setPosts(data)
+      console.log(data)
+    })
+  },[]);
+   return (
+    <div className='post-container'>
+              { posts.map((post) => (
+                <ol id={post.id} key={post.id} >
+                <p>Date: {post.date}</p>
+                <p>:Title {post.title}</p>
+                <p>:Author {post.author}</p>
+                <p>:Content {post.content}</p>
+                </ol>
+            ))}
     </div>
-  );
+);
 }
 
 export default Tradable;

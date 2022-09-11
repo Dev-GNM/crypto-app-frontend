@@ -3,8 +3,8 @@ import React from 'react';
  function Slider() {
     return (
         <div id="slide-text">
-            <em><p>It's simply writing down your thoughts and feelings to understand them more clearly. <br></br>
-                Structure and share the content on your social media platforms with a click.
+            <em><p>The Crypto News Hub promises to be a fair and objective portal, <br></br>
+            where viewers can find the best information, recent crypto currency news.<br></br>
             </p></em>
         </div>
     );

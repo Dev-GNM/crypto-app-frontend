@@ -4,10 +4,9 @@ import React from 'react';
   return (
     <div id="footer">
       <div className="about-us">
-      <em><p>With over half of the world's population using social media, platforms like Facebook,<br></br>
-      Instagram or Twitter a natural place to reach new and highly targeted potential customers.<br></br>
-      Think people only connect with brands they already know on social media? <br></br>
-      Consider that 83 percent of people say they discover new products on the platform.
+      <em><p>We are pleased to announce our intention to add support crypto enthusiasts. <br></br>
+      fastest-growing cryptocurrency news and trading website worldwide.<br></br> 
+      View breaking news and unbiased analysis on all coins.<br></br>
       </p></em>
       </div>
       <div className="support">

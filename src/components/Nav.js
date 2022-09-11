@@ -10,7 +10,9 @@ function Nav() {
             <li><a href="/">Home</a></li>
             <li><a href="/">Blog</a></li>
             <li><a href="#footer">About</a></li> 
+            
             </div>
+            
         </nav>
     );
 }
