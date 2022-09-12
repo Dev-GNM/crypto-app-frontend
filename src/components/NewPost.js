@@ -26,7 +26,12 @@ function NewPost({ onHandleAddPost, setIsFilledIn }) {
         fetch("http://localhost:9292/posts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(newPost)
+            body: JSON.stringify({
+                "Date": date,
+            "Author": author,
+            "Topic": topic,
+            "Content": content
+            })
 
         })
             .then((resp) => resp.json())
@@ -73,7 +78,7 @@ function NewPost({ onHandleAddPost, setIsFilledIn }) {
                     </div>
 
                     <button>Reset</button>
-                    <button type="submit" onclick={onHandleAddPost}>Submit Post</button>
+                    <button type="submit">Submit Post</button>
 
                 </form>
             </div>
