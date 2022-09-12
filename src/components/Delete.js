@@ -21,7 +21,7 @@ return (
     <div>
         <p> <span  type = "button" role="img" aria-label="delete">
         </span> </p>
-
+<button onClick={handleDeleteClick}>Delete</button>
     </div>
 )}
 

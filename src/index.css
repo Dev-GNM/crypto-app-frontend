@@ -84,7 +84,7 @@ a {
   text-align: center;
   padding-top: 8%;
   background-image: url("/public/image1.jpg");
-  color: rgb(255, 255, 255);
+  color: rgb(10, 9, 9);
   font-size: 20px;
 
 }
@@ -233,12 +233,21 @@ input {
   flex-direction: column;
   text-align: center;
   font-size: 1rem;
-  margin: 3rem 3rem;
+  margin: 2rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  background-color: rgb(136, 133, 133);
+  color: rgb(5, 5, 5);
 }
 
+
+button{
+  background-color: rgb(36, 34, 34);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 .new-post{
   width: 400px;
@@ -254,6 +263,10 @@ input {
   align-items: center;
   width: 100%;
   height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .post-title {
@@ -262,4 +275,9 @@ input {
   border-radius: 5px;
 }
 
+
+.links{
+  padding: 5px;
+  margin-right: 40px;
+}
 

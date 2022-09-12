@@ -4,6 +4,7 @@ import React, {useState, useEffect } from 'react';
  function Tradable() {
 
   const [posts, setPosts] = useState ([])
+  
 // const handlePostDelete = (index) => {
 //   const list = [...posts]
 //   list.splice(index, 1)
@@ -22,8 +23,8 @@ import React, {useState, useEffect } from 'react';
     <div className='post-container'>
               { posts.map((post) => (
                 <ol id={post.id} key={post.id} >
-                <p>Date: {post.date}</p>
-                <p>Topic: {post.topic}</p>
+                {/* <p>Date: {post.date}</p> */}
+               <strong><p>Topic: {post.topic}</p></strong> 
                 <p>Author: {post.author}</p>
                 <p>Content: {post.content}</p>
                 <button>Edit</button>
