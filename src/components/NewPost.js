@@ -27,7 +27,7 @@ function NewPost({ onHandleAddPost, setIsFilledIn }) {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                "Date": date,
+            "Date": date,
             "Author": author,
             "Topic": topic,
             "Content": content
@@ -36,7 +36,7 @@ function NewPost({ onHandleAddPost, setIsFilledIn }) {
         })
             .then((resp) => resp.json())
             .then((newPost) => onHandleAddPost(newPost))
-
+// newPost();
         alert("New Post added successfully!");
 
 
@@ -44,7 +44,7 @@ function NewPost({ onHandleAddPost, setIsFilledIn }) {
 
 
     return (
-        <div className="new-posts-container" style={{ margin: "auto", width: '100%', height: 90 + "vh", color: "white", backgroundColor: "black", borderRadius: "15px", padding: "15px", marginTop: "5px"}}>
+        <div className="new-posts-container" style={{ margin: "auto", width: '95%', height: 90 + "vh", color: "white", backgroundColor: "black", borderRadius: "15px", padding: "15px", marginTop: "5px"}}>
             <div className="links">
                 {/* <button>Login</button>
                 <button>Subscribe</button> */}

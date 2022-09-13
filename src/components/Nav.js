@@ -9,6 +9,7 @@ function Nav() {
             <div className="nav-bar">
             <li><a href="/">Home</a></li>
             <li><a href=".new-posts-container">Subscribe</a></li>
+            <li><a href="/">Login</a></li> 
             <li><a href="#footer">About</a></li> 
             
             </div>
