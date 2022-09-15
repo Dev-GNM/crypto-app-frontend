@@ -11,6 +11,10 @@ function Nav() {
             <li><a href=".new-posts-container">Subscribe</a></li>
             <li><a href="/">Login</a></li> 
             <li><a href="#footer">About</a></li> 
+            {/* <NavLink to = "/NewPost"> 
+            post
+
+            </NavLink> */}
             
             </div>
             

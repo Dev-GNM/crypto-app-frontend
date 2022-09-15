@@ -10,16 +10,11 @@ function PublishPost(){
 
 
 
-    function handleAddPost(newData){
-
-        setNewBlogPost([...newBlogPost, newData]) 
-    }
-    
+   
 
     
     return (
         <div >
-            <NewPost onHandleAddPost={handleAddPost} />
             
         </div>
 
